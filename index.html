@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emad Norbert Design | معرض الإنفوجرافيك</title>
+  <meta name="description" content="معرض إنفوجرافيك تاريخي وديني وسياحي من تصميم Emad Norbert Design" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="brand">Emad Norbert Design</div>
+      <div class="nav-links">
+        <a href="#gallery">المعرض</a>
+        <a href="#categories">الأقسام</a>
+        <a href="#about">عن المشروع</a>
+      </div>
+    </nav>
+    <section class="hero-content">
+      <p class="eyebrow">معرض بصري عربي</p>
+      <h1>إنفوجرافيك تاريخي، ديني، وسياحي</h1>
+      <p>مكان واحد لعرض تصميماتك بشكل احترافي، مناسب للموبايل والكمبيوتر، وجاهز للنشر على GitHub Pages.</p>
+      <a class="primary-btn" href="#gallery">شاهد المعرض</a>
+    </section>
+  </header>
+
+  <main>
+    <section id="categories" class="section">
+      <h2>الأقسام</h2>
+      <div class="category-grid">
+        <article class="category-card"><span>✦</span><h3>شخصيات كتابية</h3><p>بطرس، بولس، متى الرسول، وباقي الشخصيات.</p></article>
+        <article class="category-card"><span>✦</span><h3>أحداث مسيحية</h3><p>الصعود، العنصرة، دخول المسيح أرض مصر.</p></article>
+        <article class="category-card"><span>✦</span><h3>رحلات</h3><p>رحلة العائلة المقدسة ورحلات الرسل التبشيرية.</p></article>
+        <article class="category-card"><span>✦</span><h3>سياحة</h3><p>تصميمات المدن والدول والسفر.</p></article>
+      </div>
+    </section>
+
+    <section id="gallery" class="section dark-section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">أحدث الأعمال</p>
+          <h2>معرض الإنفوجرافيك</h2>
+        </div>
+        <input id="searchInput" type="search" placeholder="ابحث عن تصميم..." />
+      </div>
+
+      <div class="filter-buttons">
+        <button class="filter active" data-filter="all">الكل</button>
+        <button class="filter" data-filter="biblical">شخصيات كتابية</button>
+        <button class="filter" data-filter="events">أحداث مسيحية</button>
+        <button class="filter" data-filter="journeys">رحلات</button>
+        <button class="filter" data-filter="travel">سياحة</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <article class="gallery-card" data-category="biblical" data-title="متى الرسول">
+          <img src="assets/images/placeholder-1.svg" alt="متى الرسول" />
+          <div><h3>متى الرسول</h3><p>شخصيات كتابية</p></div>
+        </article>
+        <article class="gallery-card" data-category="journeys" data-title="رحلات بولس الرسول">
+          <img src="assets/images/placeholder-2.svg" alt="رحلات بولس الرسول" />
+          <div><h3>رحلات بولس الرسول</h3><p>رحلات</p></div>
+        </article>
+        <article class="gallery-card" data-category="events" data-title="دخول المسيح أرض مصر">
+          <img src="assets/images/placeholder-3.svg" alt="دخول المسيح أرض مصر" />
+          <div><h3>دخول المسيح أرض مصر</h3><p>أحداث مسيحية</p></div>
+        </article>
+        <article class="gallery-card" data-category="travel" data-title="Egypt Travel with Emad">
+          <img src="assets/images/placeholder-4.svg" alt="Egypt Travel with Emad" />
+          <div><h3>Egypt Travel with Emad</h3><p>سياحة</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <h2>عن المشروع</h2>
+      <p>هذا الموقع مخصص لعرض أعمال <strong>Emad Norbert Design</strong> في شكل معرض رقمي منظم. يمكنك استبدال الصور التجريبية بتصميماتك الحقيقية داخل مجلد <code>assets/images</code>.</p>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="closeLightbox" aria-label="إغلاق">×</button>
+    <img id="lightboxImage" src="" alt="" />
+    <h3 id="lightboxTitle"></h3>
+  </div>
+
+  <footer>
+    <p>© <span id="year"></span> Emad Norbert Design</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
